@@ -1,0 +1,11 @@
+rails使いになろうぜええ <%=link_to "新規投稿する", tweets_new_path %>
+
+<% @tweets.each do |t|  %>
+  <div>
+    <%= t.body %>
+    <br>
+    <%= t.created_at %>
+  </div>
+<% end %>
+
+<%=link_to "トップに戻る", hello_index_path %>
